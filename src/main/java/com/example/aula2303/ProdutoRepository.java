@@ -7,4 +7,5 @@ public interface ProdutoRepository extends JpaRepository<Produto, Long> {
 
     List<Produto> findByNomeContainingIgnoringCase(String nome);
     List<Produto> findByPrecoLessThan(Double preco);
+    void deleteById(Long id);
 }
